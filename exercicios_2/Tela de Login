@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Formulário de Cadastro de Vaga de Trabalho</title>
+<style>
+  /* Adicione seu CSS aqui */
+  body {
+    font-family: Arial, sans-serif;
+
+    background-color: rgba(0, 139, 139, 0.438);
+  }
+  .container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  label {
+    margin-top: 10px;
+  }
+  input, select, textarea {
+    margin-top: 5px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  button:hover {
+    background-color: #4cae4c;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>Cadastro de Vaga de Trabalho</h1>
+  <form id="jobApplication">
+    <label for="fullName">Nome Completo:</label>
+    <input type="text" id="fullName" name="fullName" required>
+
+    <label for="email">E-mail:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="position">Cargo Desejado:</label>
+    <select id="position" name="position" required>
+      <option value="">Selecione um cargo</option>
+      <option value="developer">Desenvolvedor</option>
+      <option value="designer">Designer</option>
+      <option value="Analista de Redes">Analista</option>
+      <option value="Engenheiro de Software">Engenheiro</option>
+      <option value="Developer Java">Desenvolvedor Java</option>
+      <option value="Developer Phyton">Desenvolvedor Phyton</option>
+      <option value="Scrum Master">Scrum</option>
+
+      <!-- Adicione mais opções de acordo com as vagas disponíveis -->
+    </select>
+
+    <label for="resume">Currículo:</label>
+    <textarea id="resume" name="resume" rows="5" required></textarea>
+
+    <button type="submit">Enviar</button>
+  </form>
+</div>
+
+<script>
+  // Adicione seu JavaScript aqui
+  document.getElementById('jobApplication').addEventListener('submit', function(event) {
+    event.preventDefault();
+    // Aqui você pode adicionar a lógica para processar os dados do formulário
+    alert('Formulário enviado com sucesso!');
+  });
+</script>
+</body>
+</html>
