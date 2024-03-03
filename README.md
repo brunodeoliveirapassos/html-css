@@ -4,3 +4,5 @@
 
 Estou aprendendo a criar sites e agora vou gerenciar meus 
 repositorios!
+
+Continuando os estudos sobre github e html5 css3
