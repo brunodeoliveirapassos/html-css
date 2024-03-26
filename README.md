@@ -8,4 +8,4 @@ repositorios!
 Continuando os estudos sobre github e html5 css3
 
 
-<a hrf="https://brunodeoliveirapassos.github.io/html-css/exercicios/ex001/index.html">Executar o exercicio 001</a>
+<a href="https://brunodeoliveirapassos.github.io/html-css/exercicios/ex001/index.html">Executar o exercicio 001</a>
