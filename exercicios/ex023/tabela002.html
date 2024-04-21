@@ -11,15 +11,39 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
         td, th {
             border: 1px solid black;
             padding: 10px;
         }
 
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgrey;
+        }
+
         thead, tfoot {
-            background-color: gray;
+            background-color: #383838;
             color: white;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: #383838;
+        }
+
+        tbody > tr:nth-child(odd) { /*2n-1*/
+               background-color: white;
+               font-weight: bold;
+        }
+
+        tbody > tr:nth-child(even) { /*2n*/
+               background-color: lightgray;
+               
         }
 
         td.num {
@@ -32,6 +56,7 @@
     <!--
         ANATOMIA PARA TABELAS GRANDES
         TABLE
+            CAPTION
         THEAD
             TR, TD, TH
         TBODY
@@ -41,16 +66,18 @@
     -->
 
     <table>
+        <caption>População das unidades 
+            federativas</caption>
         <thead>
              <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width:50px;">População</th>
 
              </tr>
         </thead>
         <tfoot>
             <tr>
-               <th>Total de Habitantes</th>
+               <th scope="row">Total de Habitantes</th>
                <td class="num"><strong>210.147.125</strong></td>
             </tr>
        </tfoot>
@@ -169,5 +196,74 @@
             </tr>
         </tbody>
     </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae omnis ea debitis rerum natus, 
+        illum, amet doloribus error tempore provident voluptatem dolorem recusandae, temporibus illo nobis 
+        laudantium! Reprehenderit, odit officia? Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+        Ducimus, qui provident blanditiis iusto voluptatibus doloribus quaerat laborum voluptates delectus 
+        mollitia illo fugit, earum nobis suscipit aperiam quia natus facilis eos. Lorem ipsum dolor sit amet 
+        consectetur adipisicing elit. Possimus molestiae, perspiciatis commodi in voluptas, omnis eius culpa, 
+        dolor natus ducimus veniam necessitatibus excepturi saepe expedita. Minima quo maxime esse eaque.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae omnis ea debitis rerum natus, 
+        illum, amet doloribus error tempore provident voluptatem dolorem recusandae, temporibus illo nobis 
+        laudantium! Reprehenderit, odit officia? Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+        Ducimus, qui provident blanditiis iusto voluptatibus doloribus quaerat laborum voluptates delectus 
+        mollitia illo fugit, earum nobis suscipit aperiam quia natus facilis eos. Lorem ipsum dolor sit amet 
+        consectetur adipisicing elit. Possimus molestiae, perspiciatis commodi in voluptas, omnis eius culpa, 
+        dolor natus ducimus veniam necessitatibus excepturi saepe expedita. Minima quo maxime esse eaque.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae omnis ea debitis rerum natus, 
+        illum, amet doloribus error tempore provident voluptatem dolorem recusandae, temporibus illo nobis 
+        laudantium! Reprehenderit, odit officia? Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+        Ducimus, qui provident blanditiis iusto voluptatibus doloribus quaerat laborum voluptates delectus 
+        mollitia illo fugit, earum nobis suscipit aperiam quia natus facilis eos. Lorem ipsum dolor sit amet 
+        consectetur adipisicing elit. Possimus molestiae, perspiciatis commodi in voluptas, omnis eius culpa, 
+        dolor natus ducimus veniam necessitatibus excepturi saepe expedita. Minima quo maxime esse eaque.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae omnis ea debitis rerum natus, 
+        illum, amet doloribus error tempore provident voluptatem dolorem recusandae, temporibus illo nobis 
+        laudantium! Reprehenderit, odit officia? Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+        Ducimus, qui provident blanditiis iusto voluptatibus doloribus quaerat laborum voluptates delectus 
+        mollitia illo fugit, earum nobis suscipit aperiam quia natus facilis eos. Lorem ipsum dolor sit amet 
+        consectetur adipisicing elit. Possimus molestiae, perspiciatis commodi in voluptas, omnis eius culpa, 
+        dolor natus ducimus veniam necessitatibus excepturi saepe expedita. Minima quo maxime esse eaque.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae omnis ea debitis rerum natus, 
+        illum, amet doloribus error tempore provident voluptatem dolorem recusandae, temporibus illo nobis 
+        laudantium! Reprehenderit, odit officia? Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+        Ducimus, qui provident blanditiis iusto voluptatibus doloribus quaerat laborum voluptates delectus 
+        mollitia illo fugit, earum nobis suscipit aperiam quia natus facilis eos. Lorem ipsum dolor sit amet 
+        consectetur adipisicing elit. Possimus molestiae, perspiciatis commodi in voluptas, omnis eius culpa, 
+        dolor natus ducimus veniam necessitatibus excepturi saepe expedita. Minima quo maxime esse eaque.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae omnis ea debitis rerum natus, 
+        illum, amet doloribus error tempore provident voluptatem dolorem recusandae, temporibus illo nobis 
+        laudantium! Reprehenderit, odit officia? Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+        Ducimus, qui provident blanditiis iusto voluptatibus doloribus quaerat laborum voluptates delectus 
+        mollitia illo fugit, earum nobis suscipit aperiam quia natus facilis eos. Lorem ipsum dolor sit amet 
+        consectetur adipisicing elit. Possimus molestiae, perspiciatis commodi in voluptas, omnis eius culpa, 
+        dolor natus ducimus veniam necessitatibus excepturi saepe expedita. Minima quo maxime esse eaque.Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae omnis ea debitis rerum natus, 
+        illum, amet doloribus error tempore provident voluptatem dolorem recusandae, temporibus illo nobis 
+        laudantium! Reprehenderit, odit officia? Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+        Ducimus, qui provident blanditiis iusto voluptatibus doloribus quaerat laborum voluptates delectus 
+        mollitia illo fugit, earum nobis suscipit aperiam quia natus facilis eos. Lorem ipsum dolor sit amet 
+        consectetur adipisicing elit. Possimus molestiae, perspiciatis commodi in voluptas, omnis eius culpa, 
+        dolor natus ducimus veniam necessitatibus excepturi saepe expedita. Minima quo maxime esse eaque.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae omnis ea debitis rerum natus, 
+        illum, amet doloribus error tempore provident voluptatem dolorem recusandae, temporibus illo nobis 
+        laudantium! Reprehenderit, odit officia? Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+        Ducimus, qui provident blanditiis iusto voluptatibus doloribus quaerat laborum voluptates delectus 
+        mollitia illo fugit, earum nobis suscipit aperiam quia natus facilis eos. Lorem ipsum dolor sit amet 
+        consectetur adipisicing elit. Possimus molestiae, perspiciatis commodi in voluptas, omnis eius culpa, 
+        dolor natus ducimus veniam necessitatibus excepturi saepe expedita. Minima quo maxime esse eaque.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae omnis ea debitis rerum natus, 
+        illum, amet doloribus error tempore provident voluptatem dolorem recusandae, temporibus illo nobis 
+        laudantium! Reprehenderit, odit officia? Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+        Ducimus, qui provident blanditiis iusto voluptatibus doloribus quaerat laborum voluptates delectus 
+        mollitia illo fugit, earum nobis suscipit aperiam quia natus facilis eos. Lorem ipsum dolor sit amet 
+        consectetur adipisicing elit. Possimus molestiae, perspiciatis commodi in voluptas, omnis eius culpa, 
+        dolor natus ducimus veniam necessitatibus excepturi saepe expedita. Minima quo maxime esse eaque.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae omnis ea debitis rerum natus, 
+        illum, amet doloribus error tempore provident voluptatem dolorem recusandae, temporibus illo nobis 
+        laudantium! Reprehenderit, odit officia? Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+        Ducimus, qui provident blanditiis iusto voluptatibus doloribus quaerat laborum voluptates delectus 
+        mollitia illo fugit, earum nobis suscipit aperiam quia natus facilis eos. Lorem ipsum dolor sit amet 
+        consectetur adipisicing elit. Possimus molestiae, perspiciatis commodi in voluptas, omnis eius culpa, 
+        dolor natus ducimus veniam necessitatibus excepturi saepe expedita. Minima quo maxime esse eaque.</p>
 </body>
 </html>
