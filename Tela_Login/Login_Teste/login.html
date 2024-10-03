@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de Login</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #74ebd5, #ACB6E5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .login-container {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+            width: 350px;
+            text-align: center;
+        }
+        .login-container h2 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+        .profile-pic {
+            display: block;
+            margin: 0 auto 20px;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: #ccc;
+            background-size: cover;
+            background-position: center;
+            border: 2px solid #007BFF;
+        }
+        .login-container input[type="email"],
+        .login-container input[type="password"] {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+            box-sizing: border-box;
+        }
+        .login-container input[type="checkbox"] {
+            margin-right: 10px;
+        }
+        .login-container .options {
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .login-container .options a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+        .login-container button {
+            width: 100%;
+            padding: 12px;
+            border: none;
+            border-radius: 5px;
+            background-color: #007BFF;
+            color: #fff;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .login-container button:hover {
+            background-color: #0056b3;
+        }
+        .login-container .create-account {
+            margin-top: 20px;
+        }
+        .login-container .create-account a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Login</h2>
+        <!-- Espaço para foto de perfil -->
+        <div class="profile-pic" id="profile-pic" style="background-image: url('path_to_profile_picture.jpg');"></div>
+
+        <!-- Campo para e-mail -->
+        <input type="email" placeholder="E-mail" id="email" required>
+
+        <!-- Campo para senha -->
+        <input type="password" placeholder="Senha" id="password" required>
+
+        <!-- Check box para lembrar usuário -->
+        <div class="options">
+            <label>
+                <input type="checkbox"> Lembrar-me
+            </label>
+            <a href="#">Esqueceu sua senha?</a>
+        </div>
+
+        <!-- Botão de login -->
+        <button type="button" onclick="login()">Entrar</button>
+
+        <!-- Opção para criar uma conta -->
+        <div class="create-account">
+            <p>Primeira vez aqui? <a href="#">Crie uma conta</a></p>
+            <p><a href="#">Use seu Gmail ou Hotmail</a></p>
+            <p>Ou crie um novo e-mail <a href="#">aqui</a></p>
+        </div>
+    </div>
+
+    <script>
+        function login() {
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+
+            // Validação simples (pode ser substituída por uma validação mais robusta)
+            if(email === '' || password === '') {
+                alert('Por favor, preencha todos os campos.');
+                return;
+            }
+
+            // Simulação de login bem-sucedido
+            if(email === 'user@example.com' && password === '123456') {
+                window.location.href = 'segunda_pagina.html'; // Redireciona para a segunda tela
+            } else {
+                alert('E-mail ou senha incorretos.');
+            }
+        }
+    </script>
+</body>
+</html>
