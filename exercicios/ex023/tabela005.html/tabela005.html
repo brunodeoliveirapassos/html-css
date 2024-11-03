@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela de Notas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th rowspan="2">Área</th>
+                    <th rowspan="2">Disciplinas</th>
+                    <th colspan="2">Nota</th>
+                    <th rowspan="2">Média</th>
+                </tr>
+                <tr>
+                    <th>Nota 1</th>
+                    <th>Nota 2</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Exatas -->
+                <tr>
+                    <td rowspan="4">Exatas</td>
+                    <td>Matemática</td>
+                    <td class="center">8.0</td>
+                    <td class="center">7.5</td>
+                    <td class="center">7.75</td>
+                </tr>
+                <tr>
+                    <td>Física</td>
+                    <td class="center">7.0</td>
+                    <td class="center">6.5</td>
+                    <td class="center">6.75</td>
+                </tr>
+                <tr>
+                    <td>Química</td>
+                    <td class="center">8.5</td>
+                    <td class="center">9.0</td>
+                    <td class="center">8.75</td>
+                </tr>
+                <tr>
+                    <td>Biologia</td>
+                    <td class="center">7.5</td>
+                    <td class="center">7.0</td>
+                    <td class="center">7.25</td>
+                </tr>
+                <tr class="highlight-area">
+                    <td>Média das Exatas</td>
+                    <td colspan="3"></td>
+                    <td class="center">7.63</td>
+                </tr>
+                <!-- Humanas -->
+                <tr>
+                    <td rowspan="2">Humanas</td>
+                    <td>História</td>
+                    <td class="center">8.0</td>
+                    <td class="center">8.5</td>
+                    <td class="center">8.25</td>
+                </tr>
+                <tr>
+                    <td>Geografia</td>
+                    <td class="center">7.5</td>
+                    <td class="center">8.0</td>
+                    <td class="center">7.75</td>
+                </tr>
+                <tr class="highlight-area">
+                    <td>Média das Humanas</td>
+                    <td colspan="3"></td>
+                    <td class="center">8.00</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

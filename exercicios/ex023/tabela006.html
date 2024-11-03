@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio de Tabela</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table{
+            width: 500px;
+            border-collapse: collapse;
+        }
+
+        caption{
+            font-size: 1.3em;
+            font-weight: bolder;
+            padding: 8px;
+        }
+
+        th, td{
+            border: 1px solid black;
+            padding: 8px;
+        }
+
+        .destaque {
+            background-color: rgb(0, 255, 8);
+        }
+
+        col.cnome {
+            background-color: chartreuse;
+        }
+
+        .amarelo {
+            background-color: rgb(255, 221, 0);
+        }
+
+        .vermelho {
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercicio de Tabela</h1>
+
+    <table>
+        <colgroup>
+          <col class="amarelo">
+          <col class="vermelho" span="2">
+          <col class="amarelo"> 
+        </colgroup>
+        <caption>Cadastro</caption>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
+        </tr>
+        <tr>
+            <td>Miguel</td>
+            <td>M</td>
+            <td>10</td>
+            <td>Bombeiro</td>
+        </tr>
+        <tr>
+            <td>Silas</td>
+            <td>M</td>
+            <td>38</td>
+            <td>Caminhoneiro</td>
+        </tr>
+        <tr>
+            <td>André</td>
+            <td>M</td>
+            <td>7</td>
+            <td>Caminhoneiro</td>
+        </tr>
+        <tr>
+            <td>Renan</td>
+            <td>M</td>
+            <td>38</td>
+            <td>Motoboy</td>
+        </tr>
+        <tr>
+            <td>Tio Bruno</td>
+            <td>M</td>
+            <td>39</td>
+            <td>Analista de Redes</td>
+        </tr>
+    </table>
+</body>
+</html>
